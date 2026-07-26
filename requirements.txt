@@ -1,0 +1,10 @@
+streamlit
+python-dotenv
+langchain-openai
+langchain-chroma
+langchain
+gitpython
+tree-sitter
+tree-sitter-python
+tree-sitter-javascript
+rank-bm25
