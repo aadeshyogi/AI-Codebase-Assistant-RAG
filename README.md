@@ -79,8 +79,7 @@ Kept intentionally small — just 2 Python files:
 
 ```
 repomind/
-├── app.py            # Streamlit UI: chat, token tracking, explain-code button
-├── core.py           # chunking (tree-sitter) + indexing (Chroma) + hybrid retrieval
+├── app.py            
 ├── requirements.txt
 └── .env.example
 ```
