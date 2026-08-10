@@ -75,7 +75,7 @@ streamlit run app.py
 
 ## Project structure
 
-Kept intentionally small — just 2 Python files:
+Kept intentionally small — just 1 Python files:
 
 ```
 repomind/
