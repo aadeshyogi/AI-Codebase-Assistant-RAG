@@ -43,8 +43,8 @@ gpt-4o-mini (grounded, cited answer) → Streamlit UI
 ## Setup
 
 ```bash
-git clone <this-repo>
-cd repomind
+git clone https://github.com/aadeshyogi/AI-Codebase-Assistant-RAG.git
+cd AI-Codebase-Assistant-RAG
 pip install -r requirements.txt
 cp .env.example .env   # then add your OPENAI_API_KEY
 streamlit run app.py
@@ -65,7 +65,7 @@ streamlit run app.py
 Kept intentionally small — just 1 Python file:
 
 ```text
-repomind/
+AI-Codebase-Assistant-RAG/
 ├── app.py
 ├── requirements.txt
 └── .env.example
