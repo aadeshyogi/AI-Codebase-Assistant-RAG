@@ -1,4 +1,4 @@
-# repomind.py - RepoMind: AI codebase assistant (single-file version)
+# AI Codebase Assistant - AI codebase assistant (single-file version)
 # Flow: index a GitHub repo (tree-sitter chunks -> embeddings in Chroma) ->
 # ask questions in chat -> hybrid (vector + BM25) retrieval -> gpt-4o-mini
 # answers with file/line citations. Explain button gives full-code drill-down.
@@ -128,7 +128,7 @@ def index_repo(repo_url, api_key, progress_cb=None):
             progress_cb("Already indexed before, loading from cache...")
         return db, {"cached": True, "num_chunks": db._collection.count()}
 
-    tmp_dir = tempfile.mkdtemp(prefix="repomind_")
+    tmp_dir = tempfile.mkdtemp(prefix="ai_codebase_assistant_")
     try:
         if progress_cb:
             progress_cb("Cloning " + repo_url + " ...")
@@ -251,7 +251,7 @@ def render_sources(hits, key_prefix):
 
 # ---------- Streamlit UI ----------
 
-st.set_page_config(page_title="RepoMind - AI Codebase Assistant", page_icon="🧠", layout="wide")
+st.set_page_config(page_title="AI Codebase Assistant - AI Codebase Assistant", page_icon="🧠", layout="wide")
 
 st.markdown("""
 <style>
@@ -266,7 +266,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown(
-    '<div class="title-box"><h1>🧠 RepoMind</h1>'
+    '<div class="title-box"><h1>🧠 AI Codebase Assistant</h1>'
     '<p>Ask questions about any GitHub repo and get answers with file + line citations.</p></div>',
     unsafe_allow_html=True,
 )
